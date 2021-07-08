@@ -13,7 +13,9 @@ section(class="canvas front" id="front")
         - const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
         - const diffHoursRaw = Math.abs((firstDate - secondDate) / hours);
         - const diffHours = Math.abs(Math.round(diffHoursRaw - diffDays * 24))
-        p It has been <u>#{diffDays} days and #{diffHours} hours</u> since we last saw Scott Morrison.
+        - const hoursLabel = diffHours === 1 ? 'hour' : 'hours'
+        - const daysLabel = diffDays === 1 ? 'day' : 'days'
+        p It has been <u>#{diffDays} #{daysLabel} and #{diffHours} #{hoursLabel}</u> since we last saw Scott Morrison.
         p.className#bodyCopy.
             <b>Update! Scott Morrison has now been found, and breifly spoke on the 8th July at 2pm.</b>
             <br/>A very big thank you to everyone who worked tirelessly to find him.
