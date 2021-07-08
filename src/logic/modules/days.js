@@ -3,9 +3,6 @@ function updateTime() {
     const hours = 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
     const firstDate = new Date(2021, 6, 8, 13, 45);
     const secondDate = new Date();
-
-    console.log(firstDate)
-    console.log(secondDate)
     const diffDays = Math.floor(Math.abs((firstDate - secondDate) / oneDay));
     const diffHoursRaw = Math.abs((firstDate - secondDate) / hours);
     const diffHours = Math.abs(Math.floor(diffHoursRaw - diffDays * 24));
