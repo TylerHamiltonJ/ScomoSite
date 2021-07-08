@@ -1,5 +1,5 @@
 footer(
-    class="footer-2"
+    class="footer-4"
     role="contentinfo"
     itemscope
     itemtype="https://schema.org/WPFooter")
@@ -11,9 +11,18 @@ footer(
             ul
 
                 li
+                    div
+                        form(action='https://www.paypal.com/donate' method='post' target='_top')
+                        input(type='hidden' name='business' value='84SMT58NKFPP2')
+                        input(type='hidden' name='no_recurring' value='0')
+                        input(type='hidden' name='item_name' value='Shout me a pint')
+                        input(type='hidden' name='currency_code' value='AUD')
+                        input(type='image' src='https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Donate with PayPal button' border='0')
+                        img(alt='' src='https://www.paypal.com/en_AU/i/scr/pixel.gif' width='1' height='1' border='0')
+                        span Shout me a pint. 
 
-                    a(href="#")
+                    //- a(href="#")
 
-                        svg(role="img" title="Follow us on Twitter")
+                    //-     svg(role="img" title="Follow us on Twitter")
 
-                            use(xlink:href="/assets/images/_sprites/symbols.svg#footer-2-twitter")
+                    //-         use(xlink:href="/assets/images/_sprites/symbols.svg#footer-2-twitter")
