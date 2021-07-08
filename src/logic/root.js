@@ -6,6 +6,7 @@
 
 // modules
 import { smooth } from 'modules/scroll';
+import { updateTime } from 'modules/days';
 
 // components
 import header from 'headers/1/_';
@@ -18,5 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
     smooth();
     header();
     footer();
+    updateTime();
 });
-
