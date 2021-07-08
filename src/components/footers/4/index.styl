@@ -9,3 +9,27 @@
         text-align: center
         > span
             margin-left: 10px
+a
+    &.donate
+        display inline-block
+        padding 10px 20px
+        margin 0 0.3em 0.3em 0
+        border-radius 2em
+        box-sizing border-box
+        text-decoration none
+        font-family 'Roboto',sans-serif
+        font-weight 300
+        color #FFFFFF
+        background-color #4eb5f1
+        text-align center
+        transition all 0.2s
+        &:hover
+            background-color #4095c6
+        &:visited
+            color #EEE
+
+@media all and (max-width:30em)
+    a
+        &.donate
+            display block
+            margin 0.2em auto
