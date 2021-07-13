@@ -1,4 +1,4 @@
-const bodyCopy = `<b>Update! Scott Morrison was most recently spotted in front of Kirribilli house, finally offering financial support for NSW.</b>`;
+const bodyCopy = '<b>Update! Scott Morrison was most recently spotted in front of Kirribilli house, finally offering financial support for NSW.</b>';
 
 const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 13, 15, 30)];
 
