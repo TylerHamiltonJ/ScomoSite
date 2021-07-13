@@ -5,7 +5,7 @@ const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 13, 17, 30)];
 
 const getMostRecentConference = () => {
     const sorted = schedule
-        .sort(function (a, b) {
+        .sort(function(a, b) {
             return b - a;
         })
         .filter((f) => {
@@ -22,17 +22,17 @@ function updateTime() {
     const diffDays = Math.floor(Math.abs((firstDate - secondDate) / oneDay));
     const diffHoursRaw = Math.abs((firstDate - secondDate) / hours);
     const diffHours = Math.abs(Math.floor(diffHoursRaw - diffDays * 24));
-    const hoursLabel = diffHours === 1 ? "hour" : "hours";
-    const daysLabel = diffDays === 1 ? "day" : "days";
+    const hoursLabel = diffHours === 1 ? 'hour' : 'hours';
+    const daysLabel = diffDays === 1 ? 'day' : 'days';
     document.getElementById(
-        "timeSince"
+        'timeSince'
     ).innerHTML = `<u>${diffDays} ${daysLabel} and ${diffHours} ${hoursLabel}</u>`;
-    const bodyCopyDOM = document.getElementById("bodyCopy");
+    const bodyCopyDOM = document.getElementById('bodyCopy');
     if (diffHoursRaw <= 24) {
         bodyCopyDOM.innerHTML = bodyCopy;
-        bodyCopyDOM.style.display = "visible";
+        bodyCopyDOM.style.display = 'visible';
     } else {
-        bodyCopyDOM.style.display = "none";
+        bodyCopyDOM.style.display = 'none';
     }
 }
 
