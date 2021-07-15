@@ -33,6 +33,10 @@ function updateTime() {
     } else {
         bodyCopyDOM.style.display = 'none';
     }
+    if(diffHoursRaw < 1){
+        const tagLineDOM = document.getElementById('tagLine');
+        tagLineDOM.style.display = 'none';
+    }
 }
 
 export { updateTime };
