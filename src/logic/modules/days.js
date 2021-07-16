@@ -1,6 +1,6 @@
 const bodyCopy = '<b>Update! Scott Morrison was most recently spotted in front of Kirribilli house, denying responsibility but taking credit.</b>';
 
-const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 15, 14, 30)];
+const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 16, 15, 30)];
 
 const getMostRecentConference = () => {
     const sorted = schedule
