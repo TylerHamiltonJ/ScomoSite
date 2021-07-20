@@ -40,5 +40,3 @@ function updateTime() {
 }
 
 export { updateTime };
-
-console.log(schedule.sort());
