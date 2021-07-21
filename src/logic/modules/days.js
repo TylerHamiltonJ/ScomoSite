@@ -1,6 +1,6 @@
-const bodyCopy = '<b>Update! Scott Morrison was most recently spotted in front of Kirribilli house, denying responsibility but taking credit.</b>';
+const bodyCopy = '<b>Update! Scott Morrison was most recently heard on the radio, and was asked what does "S‑O‑R‑R‑Y" spell. He didn\'t answer.</b>';
 
-const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 16, 15, 30)];
+const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 21, 8, 0)];
 
 const getMostRecentConference = () => {
     const sorted = schedule
