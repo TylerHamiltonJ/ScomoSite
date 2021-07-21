@@ -1,4 +1,4 @@
-const bodyCopy = '<b>Update! Scott Morrison was most recently heard on the radio, and was asked what does "S‑O‑R‑R‑Y" spell. He didn\'t answer.</b>';
+const bodyCopy = '<b>Update! Scott Morrison was most recently heard on the radio, and was asked what does "S‑O‑R‑R‑Y" spell. <a href="https://www.kiis1011.com.au/lifestyle/jase-demands-apology-from-pm-scott-morrison-after-nightmare-vaccine-rollout/">He didn\'t answer.</a></b>';
 
 const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 21, 8, 0)];
 
