@@ -17,7 +17,7 @@ const findTimeBetween = (firstDate) => {
 
 const getMostRecentConference = () => {
     const sorted = schedule
-        .sort(function (a, b) {
+        .sort(function(a, b) {
             return b - a;
         })
         .filter((f) => {
@@ -29,22 +29,22 @@ const getMostRecentConference = () => {
 function updateTime() {
     const lastConference = findTimeBetween(getMostRecentConference());
     const lastSighting = findTimeBetween(sighting);
-    console.log(lastSighting)
-    const hoursLabel = lastConference.diffHours === 1 ? "hour" : "hours";
-    const daysLabel = lastConference.diffDays === 1 ? "day" : "days";
+    console.log(lastSighting);
+    const hoursLabel = lastConference.diffHours === 1 ? 'hour' : 'hours';
+    const daysLabel = lastConference.diffDays === 1 ? 'day' : 'days';
     document.getElementById(
-        "timeSince"
+        'timeSince'
     ).innerHTML = `<u>${lastConference.diffDays} ${daysLabel} and ${lastConference.diffHours} ${hoursLabel}</u>`;
-    const bodyCopyDOM = document.getElementById("bodyCopy");
+    const bodyCopyDOM = document.getElementById('bodyCopy');
     if (lastConference.diffHoursRaw <= 24 || lastSighting.diffHoursRaw <= 24) {
         bodyCopyDOM.innerHTML = bodyCopy;
-        bodyCopyDOM.style.display = "visible";
+        bodyCopyDOM.style.display = 'visible';
     } else {
-        bodyCopyDOM.style.display = "none";
+        bodyCopyDOM.style.display = 'none';
     }
     if (lastConference.diffHoursRaw < 1) {
-        const tagLineDOM = document.getElementById("tagLine");
-        tagLineDOM.style.display = "none";
+        const tagLineDOM = document.getElementById('tagLine');
+        tagLineDOM.style.display = 'none';
     }
 }
 
