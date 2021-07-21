@@ -10,6 +10,7 @@ const taglines = [
 const ranArr = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 function updateTagline() {
+    console.log("Oi! Get outta my code.")
     const taglineDOM = document.getElementById('tagLine');
     const tagline = ranArr(taglines);
     taglineDOM.innerHTML = tagline;

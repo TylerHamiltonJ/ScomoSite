@@ -29,7 +29,6 @@ const getMostRecentConference = () => {
 function updateTime() {
     const lastConference = findTimeBetween(getMostRecentConference());
     const lastSighting = findTimeBetween(sighting);
-    console.log(lastSighting);
     const hoursLabel = lastConference.diffHours === 1 ? 'hour' : 'hours';
     const daysLabel = lastConference.diffDays === 1 ? 'day' : 'days';
     document.getElementById(
