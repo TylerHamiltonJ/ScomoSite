@@ -1,7 +1,7 @@
 const bodyCopy =
-    '<b>Update! We briefly heard Scott Morrison on the radio, where he was asked what does "S‑O‑R‑R‑Y" spell. <a href="https://www.kiis1011.com.au/lifestyle/jase-demands-apology-from-pm-scott-morrison-after-nightmare-vaccine-rollout/">He didn\'t answer.</a> If anyone has any clues on his whereabouts, please get in touch.</b>';
+    "<b>Update! Scott Morrison was most recently spotted in front of Kirribilli house, denying responsibility but taking credit.</b>";
 
-const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 16, 15, 30)];
+const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 21, 13, 30)];
 
 const sighting = new Date(2021, 6, 21, 8, 0);
 
@@ -17,7 +17,7 @@ const findTimeBetween = (firstDate) => {
 
 const getMostRecentConference = () => {
     const sorted = schedule
-        .sort(function(a, b) {
+        .sort(function (a, b) {
             return b - a;
         })
         .filter((f) => {
@@ -29,21 +29,21 @@ const getMostRecentConference = () => {
 function updateTime() {
     const lastConference = findTimeBetween(getMostRecentConference());
     const lastSighting = findTimeBetween(sighting);
-    const hoursLabel = lastConference.diffHours === 1 ? 'hour' : 'hours';
-    const daysLabel = lastConference.diffDays === 1 ? 'day' : 'days';
+    const hoursLabel = lastConference.diffHours === 1 ? "hour" : "hours";
+    const daysLabel = lastConference.diffDays === 1 ? "day" : "days";
     document.getElementById(
-        'timeSince'
+        "timeSince"
     ).innerHTML = `<u>${lastConference.diffDays} ${daysLabel} and ${lastConference.diffHours} ${hoursLabel}</u>`;
-    const bodyCopyDOM = document.getElementById('bodyCopy');
+    const bodyCopyDOM = document.getElementById("bodyCopy");
     if (lastConference.diffHoursRaw <= 24 || lastSighting.diffHoursRaw <= 24) {
         bodyCopyDOM.innerHTML = bodyCopy;
-        bodyCopyDOM.style.display = 'visible';
+        bodyCopyDOM.style.display = "visible";
     } else {
-        bodyCopyDOM.style.display = 'none';
+        bodyCopyDOM.style.display = "none";
     }
     if (lastConference.diffHoursRaw < 1) {
-        const tagLineDOM = document.getElementById('tagLine');
-        tagLineDOM.style.display = 'none';
+        const tagLineDOM = document.getElementById("tagLine");
+        tagLineDOM.style.display = "none";
     }
 }
 
