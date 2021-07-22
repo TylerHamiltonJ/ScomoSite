@@ -1,5 +1,5 @@
 const bodyCopy =
-    '<b>Update! Scott Morrison was most recently spotted in front of Kirribilli house, denying responsibility but taking credit.</b>';
+    '<b>Update! Scott Morrison was most recently spotted in Canberra, denying responsibility but taking credit.</b>';
 
 const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 22, 13, 30)];
 
