@@ -1,7 +1,7 @@
 const bodyCopy =
     '<b>Update! Scott Morrison was most recently spotted in Canberra, denying responsibility but taking credit.</b>';
 
-const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 22, 13, 30)];
+const schedule = [new Date(2021, 6, 12, 17, 0), new Date(2021, 6, 23, 17, 0)];
 
 const sighting = new Date(2021, 6, 21, 8, 0);
 
